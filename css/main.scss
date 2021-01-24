@@ -16,11 +16,16 @@
          url('../fonts/GothamMediumRegular/gotham-medium-webfont.woff2') format('woff2'), 
          url('../fonts/GothamMediumRegular/gotham-medium-webfont.ttf') format('truetype');
 }
-
+ * {
+     scroll-behavior: smooth;
+ }
 
 body {
-    background-color: cornflowerblue;
+    // background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
 }
 
 
 @import "header";
+@import "slider";

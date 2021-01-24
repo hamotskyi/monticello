@@ -3,9 +3,10 @@
     top: 0px;
     width: 100vw;
     height: 175px;
+    z-index: 100;
 
     &:hover + header {
-        top: 2%;
+        top: 5%;
     }
 }
 
@@ -22,9 +23,10 @@ header {
     grid-template-columns: 21.375% 57.25% 21.375%;
     gap: 2.56%;
     transition: ease-out .5s;
+    z-index: 101;
 
     &:hover {
-        top: 2%;
+        top: 5%;
     }
 
     #logoWrapper {
@@ -86,6 +88,10 @@ header {
                             margin-right: 15px;
                             padding-bottom: 5px;
                         }
+                    }
+
+                    #radioNews + p {
+                        transform: translateX(10px);  
                     }
     
                     p {
