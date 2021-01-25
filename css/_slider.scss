@@ -1,5 +1,5 @@
 #headerSliderWrapper {
-
+    position: relative;
     width: 100%;
     min-width: 1200px;
     max-width: 1600px;
@@ -43,7 +43,7 @@
             div {
                 width: 100%;
                 position: absolute;
-                top: 50%;
+                top: 48%;
                 transform: translateY(-50%);
 
                 p:first-child {
@@ -105,5 +105,58 @@
         }
     }
 
+    #scrollButtonWrapper {
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 200px;
+        margin: 0;
+
+        &:hover {
+            #scrollButton {
+                opacity: .5;
+            }
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 2.9px;
+
+            #scrollButton {
+                opacity: 0;
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                transform: translateX(-50%) scale(.8);
+                border: 1px solid white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                align-items: center;
+                cursor: pointer;
+                transition: ease-in-out .2s;
+
+    
+                &:hover {
+                    opacity: 1;
+                    transform: translateX(-50%) scale(1);
+
+                }
+    
+    
+            }
+        }
+
+
+
+    }
 }
   
