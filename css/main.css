@@ -120,11 +120,6 @@ header #nav .navEl a label {
   transition: ease-in-out .2s;
 }
 
-header #nav .navEl a label:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 header #nav .navEl a label input {
   margin: 0;
   opacity: 0;
@@ -205,7 +200,7 @@ header #socialWrapper .socialEl a {
   max-width: 1600px;
   height: 100%;
   min-height: 800px;
-  max-height: 900px;
+  max-height: 1000px;
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -217,7 +212,7 @@ header #socialWrapper .socialEl a {
   max-width: 1600px;
   height: 100%;
   min-height: 800px;
-  max-height: 900px;
+  max-height: 1000px;
   background-image: url(../img/header-slider-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -230,7 +225,7 @@ header #socialWrapper .socialEl a {
   max-width: 1600px;
   height: 100%;
   min-height: 800px;
-  max-height: 900px;
+  max-height: 1000px;
 }
 
 #headerSliderWrapper .headerSlider .slide1 {
@@ -238,5 +233,70 @@ header #socialWrapper .socialEl a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+#headerSliderWrapper .headerSlider .slide1 div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#headerSliderWrapper .headerSlider .slide1 div p:first-child {
+  margin: 0;
+  font-size: 80px;
+  font-family: "Gotham";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+
+#headerSliderWrapper .headerSlider .slide1 div p:last-child {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Gotham";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+#headerSliderWrapper .headerSlider .slide2, #headerSliderWrapper .headerSlider .slide3, #headerSliderWrapper .headerSlider .slide4, #headerSliderWrapper .headerSlider .slide5 {
+  position: relative;
+}
+
+#headerSliderWrapper .headerSlider .slide2 div, #headerSliderWrapper .headerSlider .slide3 div, #headerSliderWrapper .headerSlider .slide4 div, #headerSliderWrapper .headerSlider .slide5 div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#headerSliderWrapper .headerSlider .slide2 div p:first-child, #headerSliderWrapper .headerSlider .slide3 div p:first-child, #headerSliderWrapper .headerSlider .slide4 div p:first-child, #headerSliderWrapper .headerSlider .slide5 div p:first-child {
+  margin: 0;
+  font-size: 45px;
+  font-family: "Gotham";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+#headerSliderWrapper .headerSlider .slide2 div p:last-child, #headerSliderWrapper .headerSlider .slide3 div p:last-child, #headerSliderWrapper .headerSlider .slide4 div p:last-child, #headerSliderWrapper .headerSlider .slide5 div p:last-child {
+  margin: 0;
+  font-size: 38px;
+  font-family: "Gotham";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=main.css.map */
