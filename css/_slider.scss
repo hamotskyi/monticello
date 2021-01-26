@@ -126,6 +126,7 @@
             text-decoration: none;
             font-size: 20px;
             margin-top: 2.9px;
+            margin-bottom: 0;
 
             #scrollButton {
                 opacity: 0;
@@ -143,6 +144,7 @@
                 align-items: center;
                 cursor: pointer;
                 transition: ease-in-out .2s;
+                margin: 0;
 
     
                 &:hover {

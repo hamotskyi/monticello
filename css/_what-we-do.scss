@@ -1,0 +1,242 @@
+#whatWeDo {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 1630px;
+    margin: auto;
+    margin-top: 0;
+    box-sizing: border-box;
+    background-color: white;
+
+    #sectionTitleWrapper {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-rows: 3px 77px; 
+        width: 400px;
+        height: 150px;
+        justify-items: center;
+        align-items: center;  
+        margin-top: 0;
+
+        
+        hr {
+            width: 100px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-family: "Gotham";
+            color: rgb(44, 64, 88);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: .7;
+            margin: 0;
+            margin-top: 37px;
+        }
+    }
+
+    #tradeCenterImgBg {
+        width: 36.5625%;
+        height: 470px;
+        background-color: rgb(85, 183, 255);
+        position: absolute;
+        left: 0px;
+        top: 275px;
+    }
+
+    #tradeCenterImg {
+        background-color: rgb(44, 64, 88);
+        background-image: url(../img/trade-center-img.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 13.4375%;
+        top: 342px;
+        width: 39.375%;
+        height: 470px;
+
+    }
+
+    #tradeCenterInfoWrapper {
+        width: 31.25%;
+        height: 470px;
+        position: absolute;
+        right: 8%;
+        top: 342px;
+
+        #tradeCenterSubtitle {
+            font-size: 20px;
+            font-family: "Gotham";
+            color: rgb(44, 64, 88);
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 45px;
+        }
+
+        #tradeCenterTitle {
+            font-size: 40px;
+            font-family: "Gotham";
+            font-weight: bold;
+            color: rgb(44, 64, 88);
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 15px;
+        }
+
+        #tradeCenterText {
+            font-size: 18px;
+            font-family: "Open Sans";
+            color: rgb(75, 85, 98);
+            margin: 0;
+            margin-top: 40px;
+        }
+
+        #tradeCenterButton {
+            width: 38%;
+            min-width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            background-color: white;
+
+            &:hover {
+                transform: scale(1.15);
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: scale(1.05);
+                transition: ease-in-out .075s;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: "Gotham";
+                color: rgb(44, 64, 88);
+                text-transform: uppercase;
+            }
+        }
+
+        #tradeCenterLocation {
+            font-size: 18px;
+            font-family: "Open Sans";
+            font-style: italic;
+            color: rgb(44, 64, 88);
+            margin: 0;
+            margin-top: 60px;
+        }
+    }
+
+    #commerceCentreImgBg {
+        background-color: rgb(126, 90, 255);
+        position: absolute;
+        right: 0px;
+        top: 950px;
+        width: 36.5625%;
+        height: 470px;
+    }
+      
+    #commerceCentreImg {
+        background-color: rgb(44, 64, 88);
+        background-image: url(../img/commerce-centre-img.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 13.4375%;
+        top: 1020px;
+        width: 39.375%;
+        height: 470px;
+    }
+
+    #commerceCentreInfoWrapper {
+        width: 31.25%;
+        height: 470px;
+        position: absolute;
+        left: 8%;
+        top: 1020px;
+
+        #commerceCentreSubtitle {
+            font-size: 20px;
+            font-family: "Gotham";
+            color: rgb(44, 64, 88);
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 45px;
+        }
+
+        #commerceCentreTitle {
+            font-size: 40px;
+            font-family: "Gotham";
+            font-weight: bold;
+            color: rgb(44, 64, 88);
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 15px;
+        }
+
+        #commerceCentreText {
+            font-size: 18px;
+            font-family: "Open Sans";
+            color: rgb(75, 85, 98);
+            margin: 0;
+            margin-top: 40px;
+        }
+
+        #commerceCentreButton {
+            width: 38%;
+            min-width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            background-color: white;
+
+            &:hover {
+                transform: scale(1.15);
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: scale(1.05);
+                transition: ease-in-out .075s;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: "Gotham";
+                color: rgb(44, 64, 88);
+                text-transform: uppercase;
+            }
+        }
+
+        #commerceCentreLocation {
+            font-size: 18px;
+            font-family: "Open Sans";
+            font-style: italic;
+            color: rgb(44, 64, 88);
+            margin: 0;
+            margin-top: 60px;
+        }
+
+        
+    }
+}
+  

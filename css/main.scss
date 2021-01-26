@@ -21,7 +21,8 @@
  }
 
 body {
-    // background-color: cornflowerblue;
+    background-color: #516cf1;
+    // background: linear-gradient(173deg, rgba(85,183,255,1) 19%, rgba(126,90,255,1) 86%);
     margin: 0;
     padding: 0;
 }
@@ -29,3 +30,4 @@ body {
 
 @import "header";
 @import "slider";
+@import "what-we-do";
