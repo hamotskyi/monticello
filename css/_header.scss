@@ -34,15 +34,17 @@ header {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
+        z-index: 102;
+
 
         #logo {
             width: 95%;
             background-image: url(../img/logo.svg);
             background-size: 100%;
             background-position: center; 
-            background-repeat: no-repeat;   
+            background-repeat: no-repeat;
+            z-index: 103;   
         }
-        
     }
 
     #nav {
@@ -54,62 +56,52 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         color: white;
+        z-index: 104;   
 
         .navEl {
             width: 100%;
             height: 100%;
             display: grid;
             grid-template-columns: 1fr;
-            cursor: pointer;
-
+            z-index: 105;
+            cursor: pointer;   
             
-            a {
-                color: inherit;
-                text-decoration: none;
-                cursor: pointer;
+            label {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 0fr 1fr;
+                justify-content: center;
+                align-items: center;
+                transition: ease-in-out .2s;
+                z-index: 107;
+                cursor: pointer;  
 
-                label {
-                    width: 100%;
-                    height: 100%;
-                    display: grid;
-                    grid-template-columns: 0fr 1fr;
-                    justify-content: center;
-                    align-items: center;
+                input {
+                    margin: 0;
+                    opacity: 0; 
+
+                    &:checked + p::before {
+                        content: "\f192";
+                        font-family: "FontAwesome";
+                        margin-right: 14px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    font-family: "Gotham";
+                    text-transform: uppercase;
+                    z-index: 109;
                     cursor: pointer;
-                    transition: ease-in-out .2s;
-    
-                    input {
-                        margin: 0;
-                        opacity: 0; 
-    
-                        &:checked + p::before {
-                            content: "\f192";
-                            font-family: "FontAwesome";
-                            margin-right: 14px;
-                        }
+                      
+                    &::before {
+                        content: "\f10c";
+                        font-family: "FontAwesome";
+                        margin-right: 14px;
                     }
-
-                    #radioNews + p {
-                        transform: translateX(10px);  
-                    }
-    
-                    p {
-                        font-size: 14px;
-                        font-family: "Gotham";
-                        text-transform: uppercase;
-                          
-                        &::before {
-                            content: "\f10c";
-                            font-family: "FontAwesome";
-                            margin-right: 14px;
-                        }
-                    }
-    
-                }  
+                }
             }
-        
-
-
         }
     }
 
@@ -120,6 +112,7 @@ header {
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
+        z-index: 110;
 
         .socialEl {
             width: 40px;
@@ -131,18 +124,19 @@ header {
             justify-items: center;
             align-items: center;
             color: white;
-            cursor: pointer;
             transition: ease-in-out .2s;
+            z-index: 111;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(2.2);
-
                 border: 1px solid transparent;
             }
 
             a {
                 color: inherit;
                 text-decoration: none;
+                z-index: 112;
             }
         }
 

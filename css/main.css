@@ -66,6 +66,7 @@ header #logoWrapper {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  z-index: 102;
 }
 
 header #logoWrapper #logo {
@@ -74,6 +75,7 @@ header #logoWrapper #logo {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 103;
 }
 
 header #nav {
@@ -87,6 +89,7 @@ header #nav {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
+  z-index: 104;
 }
 
 header #nav .navEl {
@@ -96,16 +99,11 @@ header #nav .navEl {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  z-index: 105;
   cursor: pointer;
 }
 
-header #nav .navEl a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-header #nav .navEl a label {
+header #nav .navEl label {
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -118,34 +116,32 @@ header #nav .navEl a label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
+  z-index: 107;
+  cursor: pointer;
 }
 
-header #nav .navEl a label input {
+header #nav .navEl label input {
   margin: 0;
   opacity: 0;
 }
 
-header #nav .navEl a label input:checked + p::before {
+header #nav .navEl label input:checked + p::before {
   content: "\f192";
   font-family: "FontAwesome";
   margin-right: 14px;
 }
 
-header #nav .navEl a label #radioNews + p {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-}
-
-header #nav .navEl a label p {
+header #nav .navEl label p {
   font-size: 14px;
   font-family: "Gotham";
   text-transform: uppercase;
+  z-index: 109;
+  cursor: pointer;
 }
 
-header #nav .navEl a label p::before {
+header #nav .navEl label p::before {
   content: "\f10c";
   font-family: "FontAwesome";
   margin-right: 14px;
@@ -164,6 +160,7 @@ header #socialWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 110;
 }
 
 header #socialWrapper .socialEl {
@@ -180,9 +177,10 @@ header #socialWrapper .socialEl {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  cursor: pointer;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
+  z-index: 111;
+  cursor: pointer;
 }
 
 header #socialWrapper .socialEl:hover {
@@ -194,6 +192,7 @@ header #socialWrapper .socialEl:hover {
 header #socialWrapper .socialEl a {
   color: inherit;
   text-decoration: none;
+  z-index: 112;
 }
 
 #headerSliderWrapper {
@@ -207,6 +206,7 @@ header #socialWrapper .socialEl a {
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 50;
 }
 
 #headerSliderWrapper .headerSlider {
