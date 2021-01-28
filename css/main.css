@@ -28,7 +28,7 @@ body {
   top: 0px;
   width: 100vw;
   height: 175px;
-  z-index: 100;
+  z-index: 500;
 }
 
 #preHeader:hover + header {
@@ -52,9 +52,9 @@ header {
   gap: 2.56%;
   -webkit-transition: ease-out .5s;
   transition: ease-out .5s;
-  z-index: 101;
   border-radius: 30px;
   background-color: #55b8ffee;
+  z-index: 501;
 }
 
 header:hover {
@@ -68,7 +68,6 @@ header #logoWrapper {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  z-index: 102;
   position: relative;
   left: 20px;
 }
@@ -79,7 +78,6 @@ header #logoWrapper #logo {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 103;
 }
 
 header #nav {
@@ -93,7 +91,6 @@ header #nav {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
-  z-index: 104;
 }
 
 header #nav .navEl {
@@ -103,7 +100,6 @@ header #nav .navEl {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  z-index: 105;
 }
 
 header #nav .navEl label {
@@ -121,7 +117,6 @@ header #nav .navEl label {
           align-items: center;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
-  z-index: 107;
 }
 
 header #nav .navEl label input {
@@ -139,7 +134,6 @@ header #nav .navEl label p {
   font-size: 14px;
   font-family: "Gotham";
   text-transform: uppercase;
-  z-index: 109;
 }
 
 header #nav .navEl label p::before {
@@ -161,7 +155,6 @@ header #socialWrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 110;
 }
 
 header #socialWrapper .socialEl {
@@ -180,7 +173,6 @@ header #socialWrapper .socialEl {
   color: white;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
-  z-index: 111;
 }
 
 header #socialWrapper .socialEl:hover {
@@ -192,7 +184,6 @@ header #socialWrapper .socialEl:hover {
 header #socialWrapper .socialEl a {
   color: inherit;
   text-decoration: none;
-  z-index: 112;
 }
 
 #headerSliderWrapper {
@@ -312,6 +303,7 @@ header #socialWrapper .socialEl a {
   width: 250px;
   height: 200px;
   margin: 0;
+  z-index: 100;
 }
 
 #headerSliderWrapper #scrollButtonWrapper:hover #scrollButton {
@@ -343,6 +335,8 @@ header #socialWrapper .socialEl a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  z-index: 101;
+  cursor: pointer;
 }
 
 #headerSliderWrapper #scrollButtonWrapper #scrollButton:hover {
@@ -392,7 +386,6 @@ header #socialWrapper .socialEl a {
   font-size: 44px;
   font-family: "Gotham";
   color: #2c4058;
-  font-weight: bold;
   text-transform: uppercase;
   line-height: .7;
   margin: 0;
@@ -611,5 +604,97 @@ header #socialWrapper .socialEl a {
   color: #2c4058;
   margin: 0;
   margin-top: 60px;
+}
+
+#news {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  max-width: 1600px;
+  height: 1030px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/news-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#news #newsTitleWrapper {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3px 77px;
+      grid-template-rows: 3px 77px;
+  width: 400px;
+  height: 150px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+}
+
+#news #newsTitleWrapper hr {
+  width: 100px;
+  margin: 0;
+}
+
+#news #newsTitleWrapper h1 {
+  font-size: 44px;
+  font-family: "Gotham";
+  color: white;
+  text-transform: uppercase;
+  line-height: .7;
+  margin: 0;
+  margin-top: 37px;
+}
+
+#news #newsSlider {
+  width: 73.125%;
+  min-width: 1170px;
+  height: 515px;
+  position: absolute;
+  top: 315px;
+  left: 51%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#news #newsSlider .newsSlide {
+  height: 100%;
+  min-height: 515px;
+  width: 31.6%;
+  min-width: 370px;
+  margin-right: 20px;
+}
+
+#news #newsSlider .newsSlide1 {
+  background-color: yellowgreen;
+}
+
+#news #newsSlider .newsSlide2 {
+  background-color: #3263cd;
+}
+
+#news #newsSlider .newsSlide3 {
+  background-color: #cd3232;
+}
+
+#news #newsSlider .newsSlide4 {
+  background-color: #804209;
+}
+
+#news #newsSlider .newsSlide5 {
+  background-color: #d5e0f8;
+}
+
+#news #newsSlider .newsSlide6 {
+  background-color: #0b410f;
 }
 /*# sourceMappingURL=main.css.map */
