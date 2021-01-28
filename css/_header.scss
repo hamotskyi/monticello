@@ -18,12 +18,15 @@ header {
     width: 73.125%;
     max-width: 1200px;
     min-width: 880px;
-    height: 7%;
+    height: 10%;
     display: grid;
-    grid-template-columns: 21.375% 57.25% 21.375%;
+    grid-template-columns: 18.815% 57.25% 18.815%;
     gap: 2.56%;
     transition: ease-out .5s;
     z-index: 101;
+    border-radius: 30px;
+    background-color: #55b8ffee;
+
 
     &:hover {
         top: 5%;
@@ -35,6 +38,8 @@ header {
         display: grid;
         grid-template-columns: 1fr;
         z-index: 102;
+        position: relative;
+        left: 20px;
 
 
         #logo {
@@ -64,7 +69,7 @@ header {
             display: grid;
             grid-template-columns: 1fr;
             z-index: 105;
-            cursor: pointer;   
+               
             
             label {
                 width: 100%;
@@ -75,7 +80,7 @@ header {
                 align-items: center;
                 transition: ease-in-out .2s;
                 z-index: 107;
-                cursor: pointer;  
+                  
 
                 input {
                     margin: 0;
@@ -93,7 +98,7 @@ header {
                     font-family: "Gotham";
                     text-transform: uppercase;
                     z-index: 109;
-                    cursor: pointer;
+                    
                       
                     &::before {
                         content: "\f10c";
@@ -126,7 +131,7 @@ header {
             color: white;
             transition: ease-in-out .2s;
             z-index: 111;
-            cursor: pointer;
+            
 
             &:hover {
                 transform: scale(2.2);

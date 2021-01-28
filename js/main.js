@@ -30,3 +30,15 @@ $(document).ready(function() {
         );
     });
 });
+
+$(document).ready(function(){       
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+        scroll_pos = $(window).scrollTop();
+        if(scroll_pos > 700) {
+            $("header").css('background-color', '#55b8ffef');
+        } else {
+            $("header").css('background-color', 'transparent');
+        }
+    });
+});

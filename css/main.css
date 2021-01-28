@@ -44,15 +44,17 @@ header {
   width: 73.125%;
   max-width: 1200px;
   min-width: 880px;
-  height: 7%;
+  height: 10%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 21.375% 57.25% 21.375%;
-      grid-template-columns: 21.375% 57.25% 21.375%;
+  -ms-grid-columns: 18.815% 57.25% 18.815%;
+      grid-template-columns: 18.815% 57.25% 18.815%;
   gap: 2.56%;
   -webkit-transition: ease-out .5s;
   transition: ease-out .5s;
   z-index: 101;
+  border-radius: 30px;
+  background-color: #55b8ffee;
 }
 
 header:hover {
@@ -67,6 +69,8 @@ header #logoWrapper {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   z-index: 102;
+  position: relative;
+  left: 20px;
 }
 
 header #logoWrapper #logo {
@@ -100,7 +104,6 @@ header #nav .navEl {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   z-index: 105;
-  cursor: pointer;
 }
 
 header #nav .navEl label {
@@ -119,7 +122,6 @@ header #nav .navEl label {
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
   z-index: 107;
-  cursor: pointer;
 }
 
 header #nav .navEl label input {
@@ -138,7 +140,6 @@ header #nav .navEl label p {
   font-family: "Gotham";
   text-transform: uppercase;
   z-index: 109;
-  cursor: pointer;
 }
 
 header #nav .navEl label p::before {
@@ -180,7 +181,6 @@ header #socialWrapper .socialEl {
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
   z-index: 111;
-  cursor: pointer;
 }
 
 header #socialWrapper .socialEl:hover {
@@ -318,15 +318,7 @@ header #socialWrapper .socialEl a {
   opacity: .5;
 }
 
-#headerSliderWrapper #scrollButtonWrapper a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  margin-top: 2.9px;
-  margin-bottom: 0;
-}
-
-#headerSliderWrapper #scrollButtonWrapper a #scrollButton {
+#headerSliderWrapper #scrollButtonWrapper #scrollButton {
   opacity: 0;
   position: absolute;
   left: 50%;
@@ -345,13 +337,15 @@ header #socialWrapper .socialEl a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
   margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-#headerSliderWrapper #scrollButtonWrapper a #scrollButton:hover {
+#headerSliderWrapper #scrollButtonWrapper #scrollButton:hover {
   opacity: 1;
   -webkit-transform: translateX(-50%) scale(1);
           transform: translateX(-50%) scale(1);
