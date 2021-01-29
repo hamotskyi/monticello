@@ -24,7 +24,6 @@ header {
     gap: 2.56%;
     transition: ease-out .5s;
     border-radius: 30px;
-    background-color: #55b8ffee;
     z-index: 501;
 
 
@@ -75,6 +74,8 @@ header {
                 justify-content: center;
                 align-items: center;
                 transition: ease-in-out .2s;
+                cursor: pointer;
+
                   
 
                 input {

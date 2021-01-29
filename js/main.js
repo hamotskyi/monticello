@@ -23,6 +23,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
+    $('#radioAboutUs').change(function() {
+        $("body,html").animate(
+            {
+            scrollTop: $('#headerSliderWrapper').offset().top
+            },
+            200
+        );
+    });
+});
+
+$(document).ready(function() {
     $('#radioProjects').change(function() {
         $("body,html").animate(
             {
@@ -44,6 +55,18 @@ $(document).ready(function() {
     });
 });
 
+
+$(document).ready(function() {
+    $('#radioNews').change(function() {
+        $("body,html").animate(
+            {
+            scrollTop: $('#news').offset().top
+            },
+            200
+        );
+    });
+});
+
 $(document).ready(function(){       
     var scroll_pos = 0;
     $(document).scroll(function() { 
@@ -55,3 +78,20 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// $(document).ready(function() {
+//     $('.newsSliderImgZoom').mousedown(function() {
+//         $(this).parent().css( "transform", "scale(1.5)" );
+//         $(this).parent().css( "z-index", "99999999" );
+//         $(this).css( "opacity", "0" );
+
+
+//     });
+//     $('.newsSliderImgZoom').mouseup(function() {
+//         $(this).parent().css( "transform", "scale(1)" );
+//         $(this).css( "opacity", "inherit" );
+
+//     });
+// });
+
