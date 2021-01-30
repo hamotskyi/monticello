@@ -472,7 +472,6 @@ header #socialWrapper .socialEl a {
 #whatWeDo #tradeCenterInfoWrapper #tradeCenterButton:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  cursor: pointer;
 }
 
 #whatWeDo #tradeCenterInfoWrapper #tradeCenterButton:active {
@@ -480,7 +479,6 @@ header #socialWrapper .socialEl a {
           transform: scale(1.05);
   -webkit-transition: ease-in-out .075s;
   transition: ease-in-out .075s;
-  cursor: pointer;
 }
 
 #whatWeDo #tradeCenterInfoWrapper #tradeCenterButton p {
@@ -579,7 +577,6 @@ header #socialWrapper .socialEl a {
 #whatWeDo #commerceCentreInfoWrapper #commerceCentreButton:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  cursor: pointer;
 }
 
 #whatWeDo #commerceCentreInfoWrapper #commerceCentreButton:active {
@@ -587,7 +584,6 @@ header #socialWrapper .socialEl a {
           transform: scale(1.05);
   -webkit-transition: ease-in-out .075s;
   transition: ease-in-out .075s;
-  cursor: pointer;
 }
 
 #whatWeDo #commerceCentreInfoWrapper #commerceCentreButton p {
@@ -796,5 +792,200 @@ header #socialWrapper .socialEl a {
 
 #news #newsSlider .newsSlide6 .newsSlideImg {
   background-color: #ad0000;
+}
+
+#gallery {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  max-width: 1600px;
+  height: 1000px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+#gallery #galleryTitleWrapper {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3px 77px;
+      grid-template-rows: 3px 77px;
+  width: 400px;
+  height: 150px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+}
+
+#gallery #galleryTitleWrapper hr {
+  width: 100px;
+  margin: 0;
+}
+
+#gallery #galleryTitleWrapper h1 {
+  font-size: 44px;
+  font-family: "Gotham";
+  color: #2c4058;
+  text-transform: uppercase;
+  line-height: .7;
+  margin: 0;
+  margin-top: 37px;
+}
+
+#gallery #galleryGrid {
+  width: 73.125%;
+  height: 440px;
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+#gallery #galleryGrid:hover .galleryGridEl {
+  opacity: .2;
+}
+
+#gallery #galleryGrid .galleryGridEl {
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+#gallery #galleryGrid .galleryGridEl:hover {
+  opacity: 1;
+}
+
+#gallery #galleryGrid #galleryGridEl1 {
+  position: relative;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(../img/galleryGridEl1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gallery #galleryGrid #galleryGridEl1:hover #symbolWrapper {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#gallery #galleryGrid #galleryGridEl1 #symbolWrapper {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.2);
+          transform: translate(-50%, -50%) scale(0.2);
+  background-image: url(../img/360.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: ease-in-out .6s;
+  transition: ease-in-out .6s;
+  cursor: pointer;
+}
+
+#gallery #galleryGrid #galleryGridEl1 #symbolWrapper:hover {
+  -webkit-transform: translate(-50%, -50%) scale(1.15);
+          transform: translate(-50%, -50%) scale(1.15);
+}
+
+#gallery #galleryGrid #galleryGridEl1 #symbolWrapper:active {
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+
+#gallery #galleryGrid #galleryGridEl2 {
+  background-image: url(../img/galleryGridEl2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gallery #galleryGrid #galleryGridEl3 {
+  background-image: url(../img/galleryGridEl3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gallery #galleryGrid #galleryGridEl4 {
+  background-image: url(../img/galleryGridEl4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gallery #galleryGrid #galleryGridEl5 {
+  background-image: url(../img/galleryGridEl5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gallery #galleryButton {
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 190px;
+  height: 50px;
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+  background-color: white;
+}
+
+#gallery #galleryButton:hover {
+  -webkit-transform: translateX(-50%) scale(1.15);
+          transform: translateX(-50%) scale(1.15);
+}
+
+#gallery #galleryButton:active {
+  -webkit-transform: translateX(-50%) scale(1.05);
+          transform: translateX(-50%) scale(1.05);
+  -webkit-transition: ease-in-out .075s;
+  transition: ease-in-out .075s;
+}
+
+#gallery #galleryButton p {
+  font-size: 14px;
+  font-family: "Gotham";
+  color: #2c4058;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

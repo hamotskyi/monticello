@@ -1,0 +1,175 @@
+#gallery {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: white;
+
+    #galleryTitleWrapper {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-rows: 3px 77px; 
+        width: 400px;
+        height: 150px;
+        justify-items: center;
+        align-items: center;  
+        margin-top: 0;
+
+        
+        hr {
+            width: 100px;
+            margin: 0;
+            // border: 1px solid white;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-family: "Gotham";
+            color: rgb(44, 64, 88);
+            text-transform: uppercase;
+            line-height: .7;
+            margin: 0;
+            margin-top: 37px;
+        }
+
+    }
+
+    #galleryGrid {
+        width: 73.125%;
+        height: 440px;
+        position: absolute;
+        top: 310px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+
+        &:hover {
+            .galleryGridEl {
+                opacity: .2;
+            }
+        }
+
+        .galleryGridEl {
+            transition: ease-in-out .3s;
+        }
+
+        .galleryGridEl:hover {
+            opacity: 1;
+        }
+
+        #galleryGridEl1 {
+            position: relative;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-image: url(../img/galleryGridEl1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:hover {
+                #symbolWrapper{
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+
+                }
+            }
+
+            #symbolWrapper {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(.2);
+                background-image: url(../img/360.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0;
+                transition: ease-in-out .6s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translate(-50%, -50%) scale(1.15);
+                }
+
+                &:active {
+                    transform: translate(-50%, -50%) scale(.9);
+                }
+            }
+        }
+
+        #galleryGridEl2 {
+            background-image: url(../img/galleryGridEl2.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #galleryGridEl3 {
+            background-image: url(../img/galleryGridEl3.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #galleryGridEl4 {
+            background-image: url(../img/galleryGridEl4.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #galleryGridEl5 {
+            background-image: url(../img/galleryGridEl5.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+    #galleryButton {
+        position: absolute;
+        bottom: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 190px;
+        height: 50px;
+        border: 1px solid black;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        cursor: pointer;
+        transition: ease-in-out .3s;
+        background-color: white;
+
+        &:hover {
+            transform: translateX(-50%) scale(1.15);
+        }
+
+        &:active {
+            transform: translateX(-50%) scale(1.05);
+            transition: ease-in-out .075s;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: "Gotham";
+            color: rgb(44, 64, 88);
+            text-transform: uppercase;
+        }
+    }
+}
