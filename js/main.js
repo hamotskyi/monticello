@@ -67,12 +67,27 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('#radioContact').change(function() {
+        $("body,html").animate(
+            {
+            scrollTop: $('#contact').offset().top
+            },
+            200
+        );
+    });
+});
+
 $(document).ready(function(){       
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 700 && scroll_pos < 2350) {
             $("header").css('background-color', '#55b8ffef');
+        } else if (scroll_pos > 3380 && scroll_pos < 4380) {
+            $("header").css('background-color', '#55b8ffef');
+        } else if (scroll_pos > 4380) {
+            $("header").css('background-color', '#929292ef');
         } else {
             $("header").css('background-color', 'transparent');
         }

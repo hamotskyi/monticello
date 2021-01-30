@@ -1,0 +1,93 @@
+footer {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1600px;
+    height: 550px;
+    margin: auto;
+    box-sizing: border-box;
+    background-image: url(../img/footerBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 300;
+
+    #logoWrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        top: 200px;
+        left: 25.9%;
+        width: 250px;
+        height: 60px;
+
+
+        #logo {
+            background-image: url(../img/logo.svg);
+            background-size: 100%;
+            background-position: center; 
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+
+    #socialWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 200px;
+        right: 24%;
+        width: 250px;
+        height: 60px;
+
+        .socialEl {
+            width: 40px;
+            height: 40px;
+            border: 1px solid white;
+            border-radius: 50%;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+            color: white;
+            transition: ease-in-out .2s;
+            
+
+            &:hover {
+                transform: scale(2.2);
+                border: 1px solid transparent;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    #copyrights {
+        width: 700px;
+        height: 40px;
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+        justify-items: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: "Gotham";
+        color: rgb(255, 255, 255);
+
+        hr {
+            height: 20px;
+            transform: translateX(10px);
+        }
+
+    }
+
+}
