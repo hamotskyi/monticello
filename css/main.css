@@ -1312,7 +1312,10 @@ footer #copyrights hr {
   width: 100vw;
   height: 100vh;
   background-image: url(../img/header-slider-bg.png);
-  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
   padding: 0;
 }
 
